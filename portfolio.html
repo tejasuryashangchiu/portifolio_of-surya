@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="stylesheet.css" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <meta name="description" content="Portfolio of Katta Veera Venkata Surya Teja – Full Stack Developer and Machine Learning Enthusiast.">
+<meta name="keywords" content="Surya Teja, Portfolio, Developer, MERN, Python, Machine Learning, Full Stack">
+<meta name="author" content="Katta Veera Venkata Surya Teja">
+<link rel="canonical" href="https://yourdomain.com">
+
+</head>
+<script>
+  window.addEventListener('scroll', () => {
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.navbar a');
+
+    let current = '';
+
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - 100;
+      const sectionHeight = section.clientHeight;
+
+      if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+        current = section.getAttribute('id');
+      }
+    });
+
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('href') === `#${current}`) {
+        link.classList.add('active');
+      }
+    });
+  });
+</script>
+
+
+<body>
+  <header class="header">
+    <a href="#" class="logo">Portfolio</a>
+   <nav class="navbar">
+  <a href="#home" style="--i:1" class="active">Home</a>
+  <a href="#about" style="--i:2">About</a>
+  <a href="#skills" style="--i:3">Skills</a>
+  <a href="#projects" style="--i:4">Projects</a>
+  <a href="#contact" style="--i:5">Contact</a>
+</nav>
+
+  </header>
+  <button id="theme-toggle">🌓</button>
+
+
+  <section class="home" id="home">
+    <div class="home-content">
+      <h3>Hello, It's Me</h3>
+      <h1>Katta Veera Venkata Surya Teja</h1>
+      <h3>And I'm a <span class="text"></span></h3>
+      <p>
+        Computer Science student passionate about building intelligent solutions with machine learning and full-stack development expertise.
+      </p>
+
+      <div class="home-sci">
+  <a href="https://facebook.com/share/1Hbt6cNRrA/" target="_blank" rel="noopener noreferrer" style="--i:7">
+    <i class='bx bxl-facebook'></i>
+  </a>
+  <a href="https://instagram.com/yourprofile" target="_blank" rel="noopener noreferrer" style="--i:8">
+    <i class='bx bxl-instagram'></i>
+  </a>
+  <a href="https://wa.me/+917780192726" target="_blank" rel="noopener noreferrer" style="--i:9">
+    <i class='bx bxl-whatsapp'></i>
+  </a>
+  <a href="https://linkedin.com/in/surya-teja8457" target="_blank" rel="noopener noreferrer" style="--i:10">
+    <i class='bx bxl-linkedin'></i>
+  </a>
+</div>
+
+
+<a href="resume.pdf.pdf" class="btn-box" target="_blank">More About Me</a>
+
+       
+    </div>
+    <span class="home-imHover"></span>
+  </section>
+  <section class="about" id="about">
+  <a href="resume.pdf" class="btn-box" download>📄 Download Resume</a>
+
+    <div class="about-text">
+      <h2>
+        About <span>Me</span>
+      </h2>
+
+<p>I'm a Computer Science graduate from Swarnandhra College of Engineering and Technology, currently gaining hands-on experience as a Web Developer Intern at Zidio Development.
+   I specialize in designing and developing scalable web applications using the MERN stack—MongoDB, Express.js, React, and Node.js.
+   Alongside full-stack development, I actively explore Python and machine learning to build intelligent, data-driven solutions.
+   My work bridges efficient backend logic with interactive, responsive frontends—bringing together performance and usability in every project.
+   Driven by curiosity and continuous learning, I'm passionate about crafting technology that solves real-world problems with clarity and impact.
+</p></div>
+<div class="about-cards">
+  <div class="card">
+    <i class='bx bx-code-alt'></i>
+    <h3>Full Stack</h3>
+    <p>Java, Python, Web Development</p>
+  </div>
+  <div class="card">
+    <i class='bx bx-brain'></i>
+    <h3>Front-end</h3>
+    <p>Html,Css,Javascript</p>
+  </div>
+  <div class="card">
+    <i class='bx bx-data'></i>
+    <h3>Database</h3>
+    <p>MySQL, Oracle, SQL</p>
+  </div>
+  <div class="card">
+    <i class='bx bx-cloud'></i>
+    <h3>Mern stack</h3>
+    <p>MongoDB,Express.js,Reat,Node.js</p>
+  </div>
+</div>
+</section>
+<section class="skills" id="skills">
+  <h2 class="section-title">Technical Skills</h2>
+
+  <div class="skills-container">
+    <!-- Programming Languages -->
+    <div class="skill-box">
+      <h3>Programming Languages</h3>
+      <div class="skill">
+        <span>Python</span><span>90%</span>
+        <div class="progress"><div class="bar" style="width: 90%"></div></div>
+      </div>
+      <div class="skill">
+        <span>Java</span><span>85%</span>
+        <div class="progress"><div class="bar" style="width: 85%"></div></div>
+      </div>
+      <div class="skill">
+        <span>SQL</span><span>80%</span>
+        <div class="progress"><div class="bar" style="width: 80%"></div></div>
+      </div>
+      <div class="skill">
+        <span>HTML5/CSS3</span><span>85%</span>
+        <div class="progress"><div class="bar" style="width: 85%"></div></div>
+      </div>
+    </div>
+
+    <!-- AI/ML Frameworks -->
+    <div class="skill-box">
+      <h3> Back-End Frameworks</h3>
+      <div class="skill">
+        <span>MongoDB</span><span>85%</span>
+        <div class="progress"><div class="bar" style="width: 85%"></div></div>
+      </div>
+      <div class="skill">
+        <span>Express.js</span><span>80%</span>
+        <div class="progress"><div class="bar" style="width: 80%"></div></div>
+      </div>
+      <div class="skill">
+        <span>React</span><span>80%</span>
+        <div class="progress"><div class="bar" style="width: 80%"></div></div>
+      </div>
+      <div class="skill">
+        <span>Node.js</span><span>75%</span>
+        <div class="progress"><div class="bar" style="width: 75%"></div></div>
+      </div>
+    </div>
+
+    <!-- Cloud & Tools -->
+    <div class="skill-box">
+      <h3>Cloud & Tools</h3>
+      <div class="skill">
+        <span>AWS (EC2, S3)</span><span>70%</span>
+        <div class="progress"><div class="bar" style="width: 70%"></div></div>
+      </div>
+      <div class="skill">
+        <span>MySQL/Oracle</span><span>80%</span>
+        <div class="progress"><div class="bar" style="width: 80%"></div></div>
+      </div>
+      <div class="skill">
+        <span>Git/GitHub</span><span>85%</span>
+        <div class="progress"><div class="bar" style="width: 85%"></div></div>
+      </div>
+      <div class="skill">
+        <span>REST APIs</span><span>75%</span>
+        <div class="progress"><div class="bar" style="width: 75%"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="projects" id="projects">
+  <h2 class="section-title">Featured Projects</h2>
+
+  <div class="project-container">
+    <!-- Project 1 -->
+    <div class="project-card">
+      <h3>Excel analytics platform</h3>
+      <p class="subtext">Developed a full-stack Excel analytics platform using the MERN stack, enabling file upload, parsing, and visualization
+</p>
+      <div class="tags">
+        <span>React.js</React></span>
+        <span>Express.js</span>
+        <span>MongoDB</span>
+        <span>JWT</span>
+        <span>Postman</span>
+      </div>
+      <ul>
+        <li>- MERN stack for full-stack development</li>
+        <li>SheetJS & Multer for Excel upload/parsing</li>
+        <li>Chart.js & Three.js for dynamic charts</li>
+        <li>JWT auth with Tailwind CSS UI</li>
+      </ul>
+      <div class="project-buttons">
+        <a href="#" class="code-btn">Code</a>
+        <a href="#" class="demo-btn">Demo</a>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-card">
+      <h3>Credit Card Fraud Detection</h3>
+      <p class="subtext">Web application using machine learning to provide accurate Fraud Detection</p>
+      <div class="tags">
+        <span>Python</span>
+        <span>Machine Learning</span>
+        <span>Scikit-learn</span>
+      </div>
+      <ul>
+        <li> Built a fraud detection model using ML techniques</li>
+        <li>Preprocessed data with SMOTE and scaling</li>
+        <li>Designed a simple UI for file uploads and results</li>
+        <li>Achieved high precision and recall on test data</li>
+      </ul>
+      <div class="project-buttons">
+        <a href="#" class="code-btn">Code</a>
+        <a href="#" class="demo-btn">Demo</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="experience" id="experience">
+  <h2 class="section-title">Experience</h2>
+
+  <div class="experience-card">
+    <div class="exp-header">
+      <div>
+        <h3>Web Developer</h3>
+        <p class="company">Zidio Development</p>
+      </div>
+      <div class="exp-meta">
+        <p><i class='bx bx-calendar'></i> may 2025 – Present</p>
+        <p><i class='bx bx-map'></i> virtual</p>
+      </div>
+    </div>
+    <ul class="exp-details">
+      <li>Built real-time 2D and 3D charts with Chart.js and Three.js, empowering users to analyze custom data points dynamically</li>
+      <li>Enhanced UI/UX using Tailwind CSS, focusing on responsive design and seamless navigation</li>
+      <li>Spearheaded the development of a MERN stack Excel Analytics Platform, enabling users to upload files and generate interactive visualizations</li>
+      <li>Collaborated on AI-based features using external APIs to generate smart insights and summaries from structured data</li>
+      <li>Participated in the end-to-end software lifecycle—from backend logic to frontend interactivity, with deployment on Netlify and Render</li>
+    </ul>
+  </div>
+</section>
+<section class="education" id="education">
+  <h2 class="section-title">Education</h2>
+  
+  <div class="edu-card">
+    <div class="edu-date">Nov 2021 - Jun 2025</div>
+    <div class="edu-content">
+      <div class="edu-icon">🎓</div>
+      <div>
+        <h3>Bachelor of Technology in Computer Science</h3>
+        <p>Swarnandhra College of Engineering and Technology</p>
+        <p>Narsapurum, India</p>
+        <p><strong>Core Competencies:</strong>  Machine Learning, DBMS, Python (OOPS, Scripting), Java </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="edu-card">
+    <div class="edu-date">Jun 2019 - May 2021</div>
+    <div class="edu-content">
+      <div class="edu-icon">🎓</div>
+      <div>
+        <h3>Class XII (Intermediate) – MPC Stream</h3>
+        <p>Aditya Junior College</p>
+        <p>Narsapuram, India</p>
+        <p><strong>Stream:</strong> Mathematics, Physics, Chemistry</p>
+      </div>
+    </div>
+  </div>
+</section>
+ <section class="certifications-section">
+    <h2>Certifications</h2>
+    <div class="cert-container">
+      
+      <div class="cert-card">
+        <div class="cert-icon">🏅</div>
+        <h3>Machine Learning foundation</h3>
+        <p class="provider">Certifiead AWS Academy Graduate in ML</p>
+        <div class="tags">
+          <span>Predictive Modeling</span>
+          <span>Precision/Recall/F1-Score</span>
+          <span>Data Storytelling</span>
+          <span>Client Communication</span>
+        </div>
+      </div>
+
+      <div class="cert-card">
+        <div class="cert-icon">🏅</div>
+        <h3>AWS cloud foundation</h3>
+        <p class="provider">Certifiead AWS Academy Graduate in AWS Cloud</p>
+        <div class="tags">
+          <span>Customer Churn Prediction</span>
+          <span>RFM Segmentation</span>
+          <span>Dashboard Development</span>
+          <span>KPI Visualization</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <section class="contact-section" id="contact">
+  <h1>Get In Touch</h1>
+  <p>I'm always open to discussing new opportunities, interesting projects, or just having<br>a chat about technology and innovation.</p>
+
+ <div class="contact-cards">
+
+  <!-- Email Card -->
+ <a href="mailto:steja8310@gmail.com?subject=Let's%20Connect&body=Hi%20Surya%2C%0AI%20visited%20your%20portfolio%20and%20would%20like%20to%20connect." class="card" target="_blank">
+  <div class="icon"><i class='bx bx-envelope'></i></div>
+  <h3>Email</h3>
+  <p>steja8310@gmail.com</p>
+</a>
+
+
+  <!-- LinkedIn Card -->
+  <a href="https://www.linkedin.com/in/surya-teja8457" class="card" target="_blank">
+    <div class="icon"><i class='bx bxl-linkedin-square'></i></div>
+    <h3>LinkedIn</h3>
+    <p>linkedin.com/in/surya-teja8457</p>
+  </a>
+
+  <!-- GitHub Card -->
+  <a href="https://github.com/tejasuryashangchiu/excel-analytics-backend.git" class="card" target="_blank">
+    <div class="icon"><i class='bx bxl-github'></i></div>
+    <h3>GitHub</h3>
+    <p>github.com/tejasuryashangchiu</p>
+  </a>
+
+</div>
+
+
+ <a href="mailto:steja8310@gmail.com" class="email-btn">✉ Send Me an Email</a>
+
+  <footer class="footer">
+  <p>© 2025 Surya Teja. All rights reserved.</p>
+  <div class="footer-icons">
+    <i class='bx bxl-github'></i>
+    <i class='bx bxl-linkedin'></i>
+    <i class='bx bx-envelope'></i>
+  </div>
+</footer>
+
+</section>
+
+  
+  
+
+<script src="main.js"></script>
+</body>
+</html>
